@@ -1,69 +1,75 @@
 {
-  "name": "liamclarke",
-  "private": true,
-  "description": "Liam Clarke's personal portfolio site",
-  "version": "0.1.0",
-  "author": "Liam Clarke",
-  "dependencies": {
-    "@material-ui/core": "^4.7.0",
-    "@material-ui/icons": "^4.5.1",
-    "gatsby": "^2.18.4",
-    "gatsby-image": "^2.2.34",
-    "gatsby-plugin-manifest": "^2.2.30",
-    "gatsby-plugin-netlify-cms": "^4.1.30",
-    "gatsby-plugin-offline": "^3.0.24",
-    "gatsby-plugin-react-helmet": "^3.1.16",
-    "gatsby-plugin-sass": "^2.1.24",
-    "gatsby-plugin-sharp": "^2.3.4",
-    "gatsby-source-filesystem": "^2.1.40",
-    "gatsby-transformer-remark": "^2.6.39",
-    "gatsby-transformer-sharp": "^2.3.6",
-    "netlify-cms-app": "^2.9.7",
-    "node-sass": "^4.13.0",
-    "prop-types": "^15.7.2",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "react-helmet": "^5.2.1",
-    "react-swipeable-views": "^0.13.3",
-    "stylelint": "^12.0.0",
-    "stylelint-scss": "^3.13.0"
-  },
-  "devDependencies": {
-    "eslint": "^6.1.0",
-    "eslint-config-airbnb": "^18.0.1",
-    "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-jsx-a11y": "^6.2.3",
-    "eslint-plugin-react": "^7.14.3",
-    "eslint-plugin-react-hooks": "^1.7.0",
-    "stylelint-config-recommended-scss": "^4.1.0"
-  },
-  "keywords": [
-    "gatsby",
-    "graphql",
-    "netlify",
-    "netlify-cms",
-    "categories",
-    "tags",
-    "static",
-    "blog",
-    "react"
-  ],
-  "license": "MIT",
-  "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "start": "npm run develop",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean",
-    "lint:js": "eslint --cache --ext .js .",
-    "lint:scss": "stylelint \"src/**/*.scss\"",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/clarke94/liamclarke"
-  },
-  "bugs": {
-    "url": "https://github.com/clarke94/liamclarke/issues"
-  }
+    "name": "liamclarke",
+    "private": true,
+    "description": "Liam Clarke's personal portfolio site",
+    "version": "0.1.0",
+    "author": "Liam Clarke",
+    "dependencies": {
+        "@material-ui/core": "^4.7.0",
+        "@material-ui/icons": "^4.5.1",
+        "gatsby": "^2.18.4",
+        "gatsby-image": "^2.2.34",
+        "gatsby-plugin-manifest": "^2.2.30",
+        "gatsby-plugin-netlify-cms": "^4.1.30",
+        "gatsby-plugin-offline": "^3.0.24",
+        "gatsby-plugin-react-helmet": "^3.1.16",
+        "gatsby-plugin-sass": "^2.1.24",
+        "gatsby-plugin-sharp": "^2.3.4",
+        "gatsby-source-filesystem": "^2.1.40",
+        "gatsby-transformer-remark": "^2.6.39",
+        "gatsby-transformer-sharp": "^2.3.6",
+        "netlify-cms-app": "^2.9.7",
+        "normalize-scss": "^7.0.1",
+        "prop-types": "^15.7.2",
+        "react": "^16.12.0",
+        "react-dom": "^16.12.0",
+        "react-helmet": "^5.2.1",
+        "react-swipeable-views": "^0.13.3"
+    },
+    "devDependencies": {
+        "concurrently": "^5.0.1",
+        "eslint": "^6.1.0",
+        "eslint-config-airbnb": "^18.0.1",
+        "eslint-plugin-import": "^2.18.2",
+        "eslint-plugin-jsx-a11y": "^6.2.3",
+        "eslint-plugin-react": "^7.14.3",
+        "eslint-plugin-react-hooks": "^1.7.0",
+        "node-sass": "^4.13.0",
+        "nodemon": "^2.0.1",
+        "stylelint": "^12.0.0",
+        "stylelint-config-recommended-scss": "^4.1.0",
+        "stylelint-scss": "^3.13.0"
+    },
+    "keywords": [
+        "gatsby",
+        "graphql",
+        "netlify",
+        "netlify-cms",
+        "categories",
+        "tags",
+        "static",
+        "blog",
+        "react"
+    ],
+    "license": "MIT",
+    "scripts": {
+        "build": "gatsby build",
+        "develop": "gatsby develop",
+        "start": "npm run develop",
+        "serve": "gatsby serve",
+        "clean": "gatsby clean",
+        "lint:js": "eslint --cache --ext .js .",
+        "lint:scss": "stylelint \"src/**/*.scss\"",
+        "watch:scss": "nodemon -e scss -x \"npm run lint:scss\"",
+        "watch:js": "nodemon -e js -x \"npm run lint:js\"",
+        "watch": "concurrently \"npm run watch:scss\" \"npm run watch:js\"",
+        "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/clarke94/liamclarke"
+    },
+    "bugs": {
+        "url": "https://github.com/clarke94/liamclarke/issues"
+    }
 }
