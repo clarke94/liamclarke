@@ -4,9 +4,9 @@ import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
+import { Container } from '@material-ui/core';
 import SwipeableViews from 'react-swipeable-views';
 import Card from '../card/card';
-import { Container } from '@material-ui/core';
 
 function TabPanel(props) {
     const { children, value, index } = props;

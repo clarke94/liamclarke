@@ -1,6 +1,6 @@
 import React from 'react';
-import style from './banner.module.scss';
 import { Container } from '@material-ui/core';
+import style from './banner.module.scss';
 
 export const Banner = () => (
     <section className={style.banner}>

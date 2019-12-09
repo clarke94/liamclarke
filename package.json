@@ -34,6 +34,7 @@
         "eslint-plugin-jsx-a11y": "^6.2.3",
         "eslint-plugin-react": "^7.14.3",
         "eslint-plugin-react-hooks": "^1.7.0",
+        "husky": "^3.1.0",
         "node-sass": "^4.13.0",
         "nodemon": "^2.0.1",
         "stylelint": "^12.0.0",
@@ -60,10 +61,16 @@
         "clean": "gatsby clean",
         "lint:js": "eslint --cache --ext .js .",
         "lint:scss": "stylelint \"src/**/*.scss\"",
+        "lint": "concurrently \"npm run lint:js\" \"npm run lint:scss\"",
         "watch:scss": "nodemon -e scss -x \"npm run lint:scss\"",
         "watch:js": "nodemon -e js -x \"npm run lint:js\"",
         "watch": "concurrently \"npm run watch:scss\" \"npm run watch:js\"",
         "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "npm run lint"
+        }
     },
     "repository": {
         "type": "git",
