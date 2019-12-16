@@ -1,33 +1,24 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
-import Typography from '@material-ui/core/Typography';
-import Box from '@material-ui/core/Box';
 import { Container } from '@material-ui/core';
 import SwipeableViews from 'react-swipeable-views';
-import Card from '../card/card';
+import { ImgMediaCard } from '../card/card';
 
 function TabPanel(props) {
-    const { children, value, index } = props;
+    const { content } = props;
+
+    const Posts = content
+        .map((project) => <ImgMediaCard key={project.node.id} post={project.node} />);
 
     return (
         <div>
-            <Typography
-                component="div"
-                role="tabpanel"
-                hidden={value !== index}
-                id={`simple-tabpanel-${index}`}
-                aria-labelledby={`simple-tab-${index}`}
-            >
-                {value === index && <Box p={3}>{children}</Box>}
-            </Typography>
-            <Card />
+            {Posts}
         </div>
     );
 }
 
-export const Projects = () => {
+export const Projects = (props) => {
     const [value, setValue] = React.useState(0);
 
     const handleChange = (event, newValue) => {
@@ -37,6 +28,8 @@ export const Projects = () => {
     const handleChangeIndex = (index) => {
         setValue(index);
     };
+
+    const { web, apps } = props;
 
     return (
         <section>
@@ -56,31 +49,14 @@ export const Projects = () => {
                     index={value}
                     onChangeIndex={handleChangeIndex}
                 >
-                    <TabPanel value={value} index={0}>
-                        Item One
-                    </TabPanel>
-                    <TabPanel value={value} index={1}>
-                        Item Two
-                    </TabPanel>
-                    <TabPanel value={value} index={2}>
-                        Item Three
-                    </TabPanel>
+                    <TabPanel content={web} />
+                    <TabPanel content={apps} />
+                    <TabPanel content={web} />
 
                 </SwipeableViews>
             </Container>
         </section>
     );
-};
-
-TabPanel.propTypes = {
-    index: PropTypes.number,
-    value: PropTypes.number,
-    children: PropTypes.node.isRequired,
-};
-
-TabPanel.defaultProps = {
-    index: 0,
-    value: 0,
 };
 
 export default Projects;
