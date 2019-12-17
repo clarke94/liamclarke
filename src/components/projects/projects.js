@@ -1,7 +1,7 @@
 import React from 'react';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
-import { Container } from '@material-ui/core';
+import { Container, Grid, Box } from '@material-ui/core';
 import SwipeableViews from 'react-swipeable-views';
 import { ImgMediaCard } from '../card/card';
 
@@ -9,12 +9,19 @@ function TabPanel(props) {
     const { content } = props;
 
     const Posts = content
-        .map((project) => <ImgMediaCard key={project.node.id} post={project.node} />);
+        .map((project) =>
+            <Grid key={project.node.id} item xs={12} sm={6} md={4} lg={4} xl={3}>
+                <ImgMediaCard post={project.node} />
+            </Grid>);
 
     return (
-        <div>
-            {Posts}
-        </div>
+        <Container>
+            <Box py={2}>
+                <Grid container spacing={3}>
+                    {Posts}
+                </Grid>
+            </Box>
+        </Container>
     );
 }
 
@@ -29,7 +36,7 @@ export const Projects = (props) => {
         setValue(index);
     };
 
-    const { web, apps } = props;
+    const { web, apps, mobile } = props;
 
     return (
         <section>
@@ -51,7 +58,7 @@ export const Projects = (props) => {
                 >
                     <TabPanel content={web} />
                     <TabPanel content={apps} />
-                    <TabPanel content={web} />
+                    <TabPanel content={mobile} />
 
                 </SwipeableViews>
             </Container>
