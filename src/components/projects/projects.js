@@ -41,9 +41,9 @@ export const Projects = (props) => {
                     textColor="primary"
                     centered
                 >
-                    <Tab label="Lorem" />
-                    <Tab label="Ipsum" />
-                    <Tab label="Doller" />
+                    <Tab label="Web" />
+                    <Tab label="Apps" />
+                    <Tab label="Mobile" />
                 </Tabs>
                 <SwipeableViews
                     index={value}

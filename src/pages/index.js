@@ -14,12 +14,13 @@ const IndexPage = ({
 }) => {
     const Web = edges.filter((edge) => edge.node.frontmatter.category === 'web');
     const Apps = edges.filter((edge) => edge.node.frontmatter.category === 'apps');
+    const Mobile = edges.filter((edge) => edge.node.frontmatter.category === 'mobile');
 
     return (
         <Layout>
             <SEO title="Home" />
             <Banner />
-            <Projects web={Web} apps={Apps} />
+            <Projects web={Web} apps={Apps} mobile={Mobile} />
         </Layout>
     );
 };
