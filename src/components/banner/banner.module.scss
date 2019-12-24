@@ -3,4 +3,17 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    
+    &_heading {
+        position: relative;
+    }
+
+    &_role {
+        margin-left: 185px;
+    }
+
+    &_sector {
+        color: #0077b5;
+        position: absolute;
+    }
 }
