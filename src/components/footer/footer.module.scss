@@ -1,3 +1,26 @@
 .footer {
-    text-align: center;
+    width: 100%;
+    display: block;
+
+    &_container {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding-bottom: 15px;
+    }
+
+    &_link {
+        padding: 5px;
+        margin: 5px 10px;
+        color: #0077b5;
+        opacity: 0.75;
+        filter: saturate(0);
+        transition: filter ease-in .300s, opacity ease-in .300s;
+        
+        &:hover,
+        &:focus {
+            filter: saturate(1);
+            opacity: 1;
+        }
+    }
 }
