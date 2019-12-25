@@ -1,33 +1,33 @@
 import React from 'react';
-import { Container, Typography } from '@material-ui/core';
-import anime from 'animejs';
+import { Container, Typography, Box } from '@material-ui/core';
+import Anime from 'react-anime';
 import style from './banner.module.scss';
 
 export const Banner = () => {
-
-    const classSector = style.banner_sector;
-    console.log(classSector);
-
-    anime.timeline({loop: true})
-        .add({
-            targets: classSector,
-            opacity: [0,1],
-            easing: "easeOutExpo",
-            duration: 600,
-        })
 
     
     return (
         <section className={style.banner}>
             <Container>
                 <Typography variant="h2" component="h1">
-                    <span className={style.banner_sector}>Digital </span>
-                    <span className={style.banner_sector}>Web </span>
-                    <span className={style.banner_sector}>App </span>
-                    <span className={style.banner_sector}>Mobile </span>
+                    <span className={style.banner_headingContainer}>
+                        <Anime 
+                            easing='easeInOutCubic'
+                            duration={3000}
+                            loop={true}
+                            autoplay={true}
+                            delay={(el, index) => index * 3000}
+                            opacity={[0,1,1,1,0]}
+                            translateY={['-50px', '0px', '0px','0px', '10px']}
+                        >
+                            <span className={style.banner_sector}>Digital </span>
+                            <span className={style.banner_sector}>Web </span>
+                            <span className={style.banner_sector}>App </span>
+                            <span className={style.banner_sector}>Mobile </span>
+                        </Anime>
+                    </span>
                     <span className={style.banner_role}>Developer</span>
                 </Typography>
-                <Typography variant="subtitle1" component="h2">Lorem ipsum dolor sit amet. consectetur, adipiscing, elit</Typography>
             </Container>
         </section>
     );
