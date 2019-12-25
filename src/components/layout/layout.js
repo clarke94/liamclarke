@@ -8,28 +8,43 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { useStaticQuery, graphql } from 'gatsby';
+import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
 
 import Header from '../header/header';
-import './layout.scss';
 import { Footer } from '../footer/footer';
+
+import './layout.scss';
 
 const Layout = ({ children }) => {
     const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
+        query SiteTitleQuery {
+            site {
+                siteMetadata {
+                    title
+                }
+            }
         }
-      }
-    }
   `);
 
+  const theme = createMuiTheme({
+    palette: {
+      primary: {
+        main: '#0077b5',
+      },
+      secondary: {
+        light: '#0066ff',
+        main: '#0044ff',
+        contrastText: '#ffcc00',
+      },
+    },
+  });
+
     return (
-        <>
-            <Header siteTitle={data.site.siteMetadata.title} />
-            <main>{children}</main>
+        <ThemeProvider theme={theme}>
+            <Header />
+                <main>{children}</main>
             <Footer />
-        </>
+        </ThemeProvider>
     );
 };
 
