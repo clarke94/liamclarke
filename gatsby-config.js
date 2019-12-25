@@ -31,5 +31,12 @@ module.exports = {
         },
         'gatsby-transformer-remark',
         'gatsby-plugin-offline',
+        {
+            resolve: `gatsby-plugin-google-analytics`,
+            options: {
+              trackingId: 'GTM-P4LMBQN',
+              head: true
+            },
+          },
     ],
 };
