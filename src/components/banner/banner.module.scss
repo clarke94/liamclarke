@@ -3,4 +3,48 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    
+    &_heading {
+        position: relative;
+    }
+
+    &_headingContainer {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        height: 52px;
+    }
+
+    &_sector {
+        color: #0077b5;
+        position: absolute;
+        width: 180px;
+        right: 28%;
+        opacity: 0;
+        text-align: center;
+    }
+
+    &_role {
+        display: block;
+        text-align: center;
+    }
+}
+
+@media (min-width: 576px) {
+    .banner {
+        
+        &_headingContainer {
+            width: 180px;
+        }
+
+        &_sector {
+            right: 0;
+            text-align: right;
+        }
+
+        &_role {
+            display: inline-block;
+            text-align: left;
+        }
+    }
 }
