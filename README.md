@@ -17,7 +17,7 @@ This project uses [SemVer](http://semver.org/) for versioning.
 
 ## Authors
 
-* **Liam Clarke** - [LinedIn]https://www.linkedin.com/in/liamclarke94/)
+* **Liam Clarke** - [LinkedIn](https://www.linkedin.com/in/liamclarke94/)
 
 ## License
 
