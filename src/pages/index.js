@@ -6,6 +6,7 @@ import Layout from '../components/layout/layout';
 import SEO from '../components/seo/seo';
 import { Banner } from '../components/banner/banner';
 import { Projects } from '../components/projects/projects';
+import About from '../components/about/about';
 
 const IndexPage = ({
     data: {
@@ -20,6 +21,7 @@ const IndexPage = ({
         <Layout>
             <SEO title="Home" />
             <Banner />
+            <About />
             <Projects web={Web} apps={Apps} mobile={Mobile} />
         </Layout>
     );

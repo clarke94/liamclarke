@@ -1,0 +1,14 @@
+.progress {
+    padding-top: 15px;
+    
+    &__bar {
+        margin-top: 10px;
+        height: 9px !important;
+        border-radius: 5px;
+    }
+
+    &__subdirectory {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
