@@ -40,7 +40,7 @@ export const Projects = (props) => {
     const { web, apps, mobile } = props;
 
     return (
-        <Section>
+        <Section title="Projects">
             <Tabs
                 value={value}
                 onChange={handleChange}

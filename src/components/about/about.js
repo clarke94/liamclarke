@@ -6,7 +6,7 @@ import Section from '../section/section';
 export const About = () => {
 
     return (
-        <Section>
+        <Section title="About">
             <Grid container>
                 <Grid item md={10}>
                     <Progress title="Front-end Development" value={80} subskills={['HTML', 'CSS/SCSS', 'JavaScript', 'Angular', 'React', 'WordPress']} />
