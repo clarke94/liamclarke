@@ -4,6 +4,7 @@ import Tab from '@material-ui/core/Tab';
 import { Container, Grid, Box } from '@material-ui/core';
 import SwipeableViews from 'react-swipeable-views';
 import { ImgMediaCard } from '../card/card';
+import Section from '../section/section';
 
 function TabPanel(props) {
     const { content } = props;
@@ -39,30 +40,27 @@ export const Projects = (props) => {
     const { web, apps, mobile } = props;
 
     return (
-        <section>
-            <Container>
-                <Tabs
-                    value={value}
-                    onChange={handleChange}
-                    indicatorColor="primary"
-                    textColor="primary"
-                    centered
-                >
-                    <Tab label="Web" />
-                    <Tab label="Apps" />
-                    <Tab label="Mobile" />
-                </Tabs>
-                <SwipeableViews
-                    index={value}
-                    onChangeIndex={handleChangeIndex}
-                >
-                    <TabPanel content={web} />
-                    <TabPanel content={apps} />
-                    <TabPanel content={mobile} />
-
-                </SwipeableViews>
-            </Container>
-        </section>
+        <Section>
+            <Tabs
+                value={value}
+                onChange={handleChange}
+                indicatorColor="primary"
+                textColor="primary"
+                centered
+            >
+                <Tab label="Web" />
+                <Tab label="Apps" />
+                <Tab label="Mobile" />
+            </Tabs>
+            <SwipeableViews
+                index={value}
+                onChangeIndex={handleChangeIndex}
+            >
+                <TabPanel content={web} />
+                <TabPanel content={apps} />
+                <TabPanel content={mobile} />
+            </SwipeableViews>
+        </Section>
     );
 };
 
