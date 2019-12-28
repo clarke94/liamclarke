@@ -44,9 +44,9 @@ export const Projects = (props) => {
     );
 };
 
-const projectPosts = PropTypes.shape({
+const projectPosts = PropTypes.arrayOf(PropTypes.shape({
     node: PropTypes.shape({
-        id: PropTypes.number,
+        id: PropTypes.string,
         excerpt: PropTypes.string,
         frontmatter: PropTypes.shape({
             date: PropTypes.string,
@@ -55,7 +55,7 @@ const projectPosts = PropTypes.shape({
             category: PropTypes.string,
         }),
     }),
-});
+}));
 
 Projects.propTypes = {
     mobile: projectPosts,

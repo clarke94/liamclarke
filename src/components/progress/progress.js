@@ -21,7 +21,7 @@ export const Progress = (props) => {
 
 Progress.propTypes = {
     title: PropTypes.string.isRequired,
-    value: PropTypes.string.isRequired,
+    value: PropTypes.number.isRequired,
     subskills: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
 

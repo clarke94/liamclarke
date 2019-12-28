@@ -3,4 +3,12 @@
     &__group {
         padding-bottom: 1rem;
     }
+
+    &__success {
+        background-color: #4caf50 !important;
+    }
+
+    &__error {
+        background-color: #f44336 !important;
+    }
 }

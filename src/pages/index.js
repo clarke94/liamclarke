@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
 
-import Layout from '../components/layout/layout';
+import { Layout } from '../components/layout/layout';
 import SEO from '../components/seo/seo';
 import { Banner } from '../components/banner/banner';
 import { Projects } from '../components/projects/projects';
@@ -32,24 +32,39 @@ const IndexPage = ({
 export default IndexPage;
 
 export const pageQuery = graphql`
-  query {
-    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
-      edges {
-        node {
-          id
-          excerpt(pruneLength: 250)
-          frontmatter {
-            date(formatString: "MMMM DD, YYYY")
-            path
-            title
-            category
-          }
+    query {
+        allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+            edges {
+                node {
+                    id
+                    excerpt(pruneLength: 250)
+                    frontmatter {
+                        date(formatString: "MMMM DD, YYYY")
+                        path
+                        title
+                        category
+                    }
+                }
+            }
         }
-      }
     }
-  }
 `;
 
 IndexPage.propTypes = {
-    data: PropTypes.instanceOf(pageQuery).isRequired,
+    data: PropTypes.shape({
+        allMarkdownRemark: PropTypes.shape({
+            edges: PropTypes.arrayOf(PropTypes.shape({
+                node: PropTypes.shape({
+                    id: PropTypes.string,
+                    excerpt: PropTypes.string,
+                    frontmatter: PropTypes.shape({
+                        date: PropTypes.string,
+                        path: PropTypes.string,
+                        title: PropTypes.string,
+                        category: PropTypes.string,
+                    }),
+                }),
+            })),
+        }),
+    }).isRequired,
 };
