@@ -7,6 +7,7 @@ import SEO from '../components/seo/seo';
 import { Banner } from '../components/banner/banner';
 import { Projects } from '../components/projects/projects';
 import About from '../components/about/about';
+import Contact from '../components/contact/contact';
 
 const IndexPage = ({
     data: {
@@ -23,6 +24,7 @@ const IndexPage = ({
             <Banner />
             <About />
             <Projects web={Web} apps={Apps} mobile={Mobile} />
+            <Contact />
         </Layout>
     );
 };
