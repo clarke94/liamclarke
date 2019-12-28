@@ -20,9 +20,9 @@ export const Contact = () => {
                 }}
                 validationSchema={
                     Yup.object().shape({
-                        name: Yup.string().min(2, 'Too Short').max(50, 'Too Long').required('Name required'),
-                        email: Yup.string().email('Invalid email').required('Email Required'),
-                        message: Yup.string().min(10, 'Too Short').max(500, 'Too Long').required('Name required'),
+                        name: Yup.string().min(2, 'Name is too Short').max(50, 'Name is too Long').required('Name is required'),
+                        email: Yup.string().email('Invalid email').required('Email is required'),
+                        message: Yup.string().min(10, 'Message is too Short').max(500, 'Message is too Long').required('Message is required'),
                     })
                 }
                 onSubmit={(values) => {
