@@ -5,11 +5,11 @@ import PropTypes from 'prop-types';
 import style from './section.module.scss';
 
 export const Section = (props) => {
-    const {children, title} = props;
+    const { children, title } = props;
 
     return (
         <Fade bottom>
-            <Container component="section" classes={{root: style.section}}>
+            <Container component="section" classes={{ root: style.section }}>
                 {title ? <Typography variant="h4" component="h3" align="center" display="block" color="primary" gutterBottom>{title}</Typography> : ''}
                 {children}
             </Container>
@@ -19,6 +19,11 @@ export const Section = (props) => {
 
 Section.propTypes = {
     children: PropTypes.node.isRequired,
+    title: PropTypes.string,
+};
+
+Section.defaultProps = {
+    title: null,
 };
 
 export default Section;

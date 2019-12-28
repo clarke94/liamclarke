@@ -2,9 +2,9 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import PropTypes from 'prop-types';
+import { Container, Grid } from '@material-ui/core';
 import Layout from '../components/layout/layout';
 import SEO from '../components/seo/seo';
-import { Container, Grid } from '@material-ui/core';
 
 export default function Template({
     data, // this prop will be injected by the GraphQL query below.

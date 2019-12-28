@@ -6,8 +6,8 @@ import Layout from '../components/layout/layout';
 import SEO from '../components/seo/seo';
 import { Banner } from '../components/banner/banner';
 import { Projects } from '../components/projects/projects';
-import About from '../components/about/about';
-import Contact from '../components/contact/contact';
+import { About } from '../components/about/about';
+import { Contact } from '../components/contact/contact';
 
 const IndexPage = ({
     data: {

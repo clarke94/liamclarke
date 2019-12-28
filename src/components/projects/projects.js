@@ -1,30 +1,10 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
-import { Container, Grid, Box } from '@material-ui/core';
 import SwipeableViews from 'react-swipeable-views';
-import { ImgMediaCard } from '../card/card';
-import Section from '../section/section';
-
-function TabPanel(props) {
-    const { content } = props;
-
-    const Posts = content
-        .map((project) =>
-            <Grid key={project.node.id} item xs={12} sm={6} md={4} lg={4} xl={3}>
-                <ImgMediaCard post={project.node} />
-            </Grid>);
-
-    return (
-        <Container>
-            <Box py={2}>
-                <Grid container spacing={3}>
-                    {Posts}
-                </Grid>
-            </Box>
-        </Container>
-    );
-}
+import { Section } from '../section/section';
+import { ProjectsPanel } from '../projects-panel/projects-panel';
 
 export const Projects = (props) => {
     const [value, setValue] = React.useState(0);
@@ -56,12 +36,37 @@ export const Projects = (props) => {
                 index={value}
                 onChangeIndex={handleChangeIndex}
             >
-                <TabPanel content={web} />
-                <TabPanel content={apps} />
-                <TabPanel content={mobile} />
+                <ProjectsPanel content={web} />
+                <ProjectsPanel content={apps} />
+                <ProjectsPanel content={mobile} />
             </SwipeableViews>
         </Section>
     );
+};
+
+const projectPosts = PropTypes.shape({
+    node: PropTypes.shape({
+        id: PropTypes.number,
+        excerpt: PropTypes.string,
+        frontmatter: PropTypes.shape({
+            date: PropTypes.string,
+            path: PropTypes.string,
+            title: PropTypes.string,
+            category: PropTypes.string,
+        }),
+    }),
+});
+
+Projects.propTypes = {
+    mobile: projectPosts,
+    apps: projectPosts,
+    web: projectPosts,
+};
+
+Projects.defaultProps = {
+    mobile: {},
+    apps: {},
+    web: {},
 };
 
 export default Projects;

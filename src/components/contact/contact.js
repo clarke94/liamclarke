@@ -1,15 +1,14 @@
 import React from 'react';
-import Section from '../section/section';
+import { TextField, Button } from '@material-ui/core';
 import { Formik, Form, FastField } from 'formik';
 import * as Yup from 'yup';
-import { TextField, Button } from '@material-ui/core';
+import { Section } from '../section/section';
 import style from './contact.module.scss';
 
 export const Contact = () => {
-
     const encode = (data) => Object.keys(data)
-        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-        .join("&");
+        .map((key) => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`)
+        .join('&');
 
     return (
         <Section title="Contact">
@@ -27,26 +26,27 @@ export const Contact = () => {
                     })
                 }
                 onSubmit={(values) => {
-                    fetch("/", {
-                        method: "POST",
-                        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-                        body: encode({ "form-name": "contact", ...values })
-                    }).catch(error => alert(error));
-                }}>
+                    fetch('/', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                        body: encode({ 'form-name': 'contact', ...values }),
+                    }).catch((error) => alert(error));
+                }}
+            >
                 {({ errors, touched }) => (
-                    <Form name="contact" method="post"  data-netlify="true">
+                    <Form name="contact" method="post" data-netlify="true">
                         <div className={style.contact__group}>
-                            <FastField name="name" type="text" label="Name" as={TextField} helperText={errors.name && touched.name ? errors.name : ''} error={errors.name && touched.name} fullWidth></FastField>
+                            <FastField name="name" type="text" label="Name" as={TextField} helperText={errors.name && touched.name ? errors.name : ''} error={errors.name && touched.name} fullWidth />
                         </div>
                         <div className={style.contact__group}>
-                            <FastField name="email" type="email" label="Email" helperText={errors.email && touched.email ? errors.email : ''} as={TextField} error={errors.email && touched.email} fullWidth></FastField>
-                        </div>
-
-                        <div className={style.contact__group}>
-                            <FastField name="message" type="textarea" label="Message" helperText={errors.message && touched.message ? errors.message : ''} as={TextField} rows="5" error={errors.message && touched.message} multiline fullWidth></FastField>
+                            <FastField name="email" type="email" label="Email" helperText={errors.email && touched.email ? errors.email : ''} as={TextField} error={errors.email && touched.email} fullWidth />
                         </div>
 
-                        <FastField name="form-name" type="hidden" value="contact"></FastField>
+                        <div className={style.contact__group}>
+                            <FastField name="message" type="textarea" label="Message" helperText={errors.message && touched.message ? errors.message : ''} as={TextField} rows="5" error={errors.message && touched.message} multiline fullWidth />
+                        </div>
+
+                        <FastField name="form-name" type="hidden" value="contact" />
                         <Button variant="contained" color="primary" type="submit" fullWidth>Send</Button>
                     </Form>
                 )}
