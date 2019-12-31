@@ -5,9 +5,16 @@ import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 import { Link } from 'gatsby';
 import style from './infobox.module.scss';
+import { CardMedia } from '@material-ui/core';
 
 export const Infobox = ({ post }) => (
     <Card classes={{ root: style.infobox }}>
+        <Link to={post.frontmatter.path}>
+            <CardMedia 
+                classes={{ root: style.infobox__image }}
+                image={post.frontmatter.featuredImage.childImageSharp.fluid.src}
+            />
+        </Link>
         <CardContent>
             <Link to={post.frontmatter.path}>
                 <Typography gutterBottom variant="h5" component="h2">

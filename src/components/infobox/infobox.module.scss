@@ -1,3 +1,8 @@
 .infobox {
     height: 100%;
+
+    &__image {
+        padding-top: 45%;
+        height: 0;
+    }
 }

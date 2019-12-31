@@ -41,5 +41,14 @@ export const pageQuery = graphql`
 `;
 
 Template.propTypes = {
-    data: PropTypes.instanceOf(pageQuery).isRequired,
+    data: PropTypes.shape({
+        allMarkdownRemark: PropTypes.shape({
+            html,
+            frontmatter: PropTypes.shape({
+                date: PropTypes.string,
+                path: PropTypes.string,
+                title: PropTypes.string,
+            }),
+        }),
+    }).isRequired,
 };

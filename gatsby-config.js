@@ -29,6 +29,12 @@ module.exports = {
                 name: 'markdown-pages',
             },
         },
+        {
+            resolve: `gatsby-source-filesystem`,
+            options: {
+                path: `${__dirname}/content/media`,
+            },
+        },
         'gatsby-transformer-remark',
         'gatsby-plugin-offline',
         {
