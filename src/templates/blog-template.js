@@ -3,12 +3,12 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import PropTypes from 'prop-types';
 import { Container, Grid } from '@material-ui/core';
-import Layout from '../components/layout/layout';
+import { Layout } from '../components/layout/layout';
 import SEO from '../components/seo/seo';
 
-export default function Template({
+export const Template = ({
     data, // this prop will be injected by the GraphQL query below.
-}) {
+}) => {
     const { markdownRemark } = data;
     const { frontmatter, html } = markdownRemark;
     return (
@@ -25,7 +25,7 @@ export default function Template({
             </Container>
         </Layout>
     );
-}
+};
 
 export const pageQuery = graphql`
   query($path: String!) {
@@ -43,7 +43,7 @@ export const pageQuery = graphql`
 Template.propTypes = {
     data: PropTypes.shape({
         allMarkdownRemark: PropTypes.shape({
-            html,
+            html: PropTypes.string,
             frontmatter: PropTypes.shape({
                 date: PropTypes.string,
                 path: PropTypes.string,

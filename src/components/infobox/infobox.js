@@ -4,13 +4,13 @@ import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 import { Link } from 'gatsby';
-import style from './infobox.module.scss';
 import { CardMedia } from '@material-ui/core';
+import style from './infobox.module.scss';
 
 export const Infobox = ({ post }) => (
     <Card classes={{ root: style.infobox }}>
         <Link to={post.frontmatter.path}>
-            <CardMedia 
+            <CardMedia
                 classes={{ root: style.infobox__image }}
                 image={post.frontmatter.featuredImage.childImageSharp.fluid.src}
             />
