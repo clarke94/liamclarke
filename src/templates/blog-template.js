@@ -6,9 +6,7 @@ import { Container, Grid } from '@material-ui/core';
 import { Layout } from '../components/layout/layout';
 import SEO from '../components/seo/seo';
 
-export const Template = ({
-    data, // this prop will be injected by the GraphQL query below.
-}) => {
+export const Template = ({ data }) => {
     const { markdownRemark } = data;
     const { frontmatter, html } = markdownRemark;
     return (
@@ -52,3 +50,5 @@ Template.propTypes = {
         }),
     }).isRequired,
 };
+
+export default Template;
