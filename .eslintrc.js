@@ -5,7 +5,9 @@ module.exports = {
     },
     "extends": [
         "plugin:react/recommended",
-        "airbnb"
+        "airbnb",
+        "react-app",
+        "plugin:jsx-a11y/strict"
     ],
     "globals": {
         "Atomics": "readonly",
@@ -19,7 +21,8 @@ module.exports = {
         "sourceType": "module"
     },
     "plugins": [
-        "react"
+        "react",
+        "jsx-a11y"
     ],
     "rules": {
         "indent": ["error", 4],

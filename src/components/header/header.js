@@ -6,7 +6,7 @@ import { Link } from 'gatsby';
 export const Header = () => (
     <header>
         <Container>
-            <Typography variant="h6" color="inherit">
+            <Typography variant="h6" component="span" color="inherit">
                 <Link to="/">Liam Clarke</Link>
             </Typography>
         </Container>

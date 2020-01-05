@@ -10,7 +10,7 @@ export const Section = (props) => {
     return (
         <Fade bottom>
             <Container component="section" classes={{ root: style.section }}>
-                {title ? <Typography variant="h4" component="h3" align="center" display="block" color="primary" gutterBottom>{title}</Typography> : ''}
+                {title ? <Typography variant="h4" component="h2" align="center" display="block" color="primary" gutterBottom>{title}</Typography> : ''}
                 {children}
             </Container>
         </Fade>

@@ -9,7 +9,7 @@ import style from './infobox.module.scss';
 
 export const Infobox = ({ post }) => (
     <Card classes={{ root: style.infobox }}>
-        <Link to={post.frontmatter.path}>
+        <Link to={post.frontmatter.path} aria-label={post.frontmatter.title}>
             <CardMedia
                 classes={{ root: style.infobox__image }}
                 image={post.frontmatter.featuredImage.childImageSharp.fluid.src}
