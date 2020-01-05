@@ -40,7 +40,7 @@ export const pageQuery = graphql`
 
 Template.propTypes = {
     data: PropTypes.shape({
-        allMarkdownRemark: PropTypes.shape({
+        markdownRemark: PropTypes.shape({
             html: PropTypes.string,
             frontmatter: PropTypes.shape({
                 date: PropTypes.string,

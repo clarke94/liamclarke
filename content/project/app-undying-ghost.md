@@ -1,7 +1,7 @@
 ---
 title: Undying Ghost
 path: /project/undying-ghost
-featuredImage: ../media/east-lancs-past-captains/Combined.png
+featuredImage: ../media/undying-ghost/UDL.png
 date: 2019-12-01T19:38:53.520Z
 category: apps
 description:

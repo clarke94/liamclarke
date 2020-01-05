@@ -1,7 +1,7 @@
 ---
 title: Fitbit APOD
 path: /project/fitbit-apod
-featuredImage: ../media/east-lancs-past-captains/Combined.png
+featuredImage: ../media/fitbit-apod/Combined.png
 date: 2019-12-01T19:38:53.520Z
 category: apps
 description: Extending NASA's Astronomy Picture of the Day to use with Fitbit.
@@ -18,7 +18,7 @@ TODO: Set up images and display image gallery
 The problem was integrating NASA's APOD REST API to the FItbit SDK, which came with some challenges:
 
 1. Manipulating and optimizing the APOD images and storing the results available to be used.
-2. Updating the APOD picture once a day to the new picture. 
+2. Updating the APOD picture once a day to the new picture.
 
 ### Major Challenge
 

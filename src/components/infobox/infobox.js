@@ -34,6 +34,13 @@ Infobox.propTypes = {
         frontmatter: PropTypes.shape({
             title: PropTypes.string,
             path: PropTypes.string,
+            featuredImage: PropTypes.shape({
+                childImageSharp: PropTypes.shape({
+                    fluid: PropTypes.shape({
+                        src: PropTypes.string,
+                    }),
+                }),
+            }),
         }),
     }).isRequired,
 };
