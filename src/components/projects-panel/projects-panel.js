@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Container, Grid, Box } from '@material-ui/core';
 import { Infobox } from '../infobox/infobox';
+import style from './projects-panel.module.scss';
 
 export const ProjectsPanel = (props) => {
     const { content } = props;
@@ -16,12 +17,10 @@ export const ProjectsPanel = (props) => {
         );
 
     return (
-        <Container>
-            <Box py={2}>
-                <Grid container spacing={3}>
-                    {Posts}
-                </Grid>
-            </Box>
+        <Container classes={{ root: style.projectsPanel__container }}>
+            <Grid container spacing={3}>
+                {Posts}
+            </Grid>
         </Container>
     );
 };
