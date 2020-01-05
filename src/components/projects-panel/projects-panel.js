@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Container, Grid, Box } from '@material-ui/core';
+import { Container, Grid } from '@material-ui/core';
 import { Infobox } from '../infobox/infobox';
 import style from './projects-panel.module.scss';
 
