@@ -25,14 +25,14 @@ module.exports = {
         {
             resolve: 'gatsby-source-filesystem',
             options: {
-                path: `${__dirname}/content/project`,
+                path: `${__dirname}/static/content/project`,
                 name: 'markdown-pages',
             },
         },
         {
             resolve: 'gatsby-source-filesystem',
             options: {
-                path: `${__dirname}/content/media`,
+                path: `${__dirname}/static/content/media`,
                 name: 'images',
             },
         },
