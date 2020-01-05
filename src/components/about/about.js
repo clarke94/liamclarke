@@ -12,6 +12,7 @@ export const About = () => (
                 <Progress title="Application Development" value={70} subskills={['NodeJS', 'Electron']} />
                 <Progress title="Mobile Development" value={65} subskills={['Ionic', 'React native', 'Nativescript']} />
                 <Progress title="Database" value={60} subskills={['MySQL', 'MongoDB']} />
+                <Progress title="Build Tools" value={85} subskills={['Webpack', 'Grunt', 'Gulp']} />
                 <Progress title="CI/CD" value={50} subskills={['Jenkins', 'Travis', 'Circle']} />
                 <Progress title="CMS" value={95} subskills={['WordPress', 'Teamsite', 'ButterCMS', 'NetlifyCMS']} />
             </Grid>
