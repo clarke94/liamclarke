@@ -19,7 +19,7 @@ module.exports = {
                 background_color: '#663399',
                 theme_color: '#663399',
                 display: 'minimal-ui',
-                icon: 'static/favicon/favicon-32x32.png', // This path is relative to the root of the site.
+                icon: 'static/favicon/favicon-32x32.png',
             },
         },
         {
@@ -36,7 +36,6 @@ module.exports = {
             },
         },
         'gatsby-transformer-remark',
-        'gatsby-plugin-offline',
         {
             resolve: 'gatsby-plugin-google-analytics',
             options: {
@@ -44,5 +43,6 @@ module.exports = {
                 head: true,
             },
         },
+        'gatsby-plugin-offline',
     ],
 };
