@@ -1,6 +1,10 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/5760e798-eebe-4dfd-8c04-81059558263b/deploy-status)](https://app.netlify.com/sites/friendly-gates-a3c308/deploys)
+
 # LiamClarke.dev
 
 Digital Developer. Developing everything Digital. A project portfolio site. 
+
+* [https://liamclarke.dev/](https://liamclarke.dev/)
 
 ## Built With
 
