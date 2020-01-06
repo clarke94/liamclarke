@@ -1,0 +1,22 @@
+.carousel {
+    &__container {
+        position: relative;
+        height: 400px;
+        overflow: hidden;
+
+        &:focus {
+            outline: 0;
+        }
+    }
+
+    &__image {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-repeat: no-repeat;
+        background-position: 50%;
+        background-size: contain;
+    }
+}

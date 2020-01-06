@@ -2,6 +2,12 @@
 title: Makaton
 path: /project/makaton
 featuredImage: ../media/makaton/Combined.png
+slides: [
+    ../media/makaton/Combined.png,
+    ../media/makaton/Learn.png,
+    ../media/makaton/Profile.png,
+    ../media/makaton/Translate.png,
+]
 date: 2019-12-01T19:38:53.520Z
 category: mobile
 description:

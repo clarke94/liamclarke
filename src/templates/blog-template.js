@@ -5,14 +5,18 @@ import PropTypes from 'prop-types';
 import { Container, Grid } from '@material-ui/core';
 import { Layout } from '../components/layout/layout';
 import SEO from '../components/seo/seo';
+import { Carousel } from '../components/carousel/carousel';
+import style from './blog-template.module.scss';
 
 export const Template = ({ data }) => {
     const { markdownRemark } = data;
     const { frontmatter, html } = markdownRemark;
+
     return (
         <Layout>
             <SEO title={frontmatter.title} />
-            <Container>
+            <Carousel slides={frontmatter.slides} />
+            <Container classes={{ root: style.blogTemplate }}>
                 <Grid container>
                     <Grid item md={10} lg={8}>
                         <h1>{frontmatter.title}</h1>
@@ -32,6 +36,13 @@ export const pageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             path
             title
+            slides {
+                childImageSharp {
+                    fluid(fit: COVER, maxHeight: 400) {
+                        ...GatsbyImageSharpFluid_withWebp_tracedSVG
+                    }
+                }
+            }
         }
     }
   }
@@ -45,6 +56,11 @@ Template.propTypes = {
                 date: PropTypes.string,
                 path: PropTypes.string,
                 title: PropTypes.string,
+                slides: PropTypes.shape({
+                    fluid: PropTypes.shape({
+                        GatsbyImageSharpFluid_withWebp_tracedSVG: PropTypes.any,
+                    }),
+                }),
             }),
         }),
     }).isRequired,

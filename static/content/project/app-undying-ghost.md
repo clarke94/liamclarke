@@ -2,6 +2,10 @@
 title: Undying Ghost
 path: /project/undying-ghost
 featuredImage: ../media/undying-ghost/UDL.png
+slides: [
+    ../media/undying-ghost/UDL.png,
+    ../media/undying-ghost/UDL.png,
+]
 date: 2019-12-01T19:38:53.520Z
 category: apps
 description:

@@ -2,6 +2,11 @@
 title: Favrotation
 path: /project/favrotation
 featuredImage: ../media/favrotation/Combined.png
+slides: [
+    ../media/favrotation/Combined.png,
+    ../media/favrotation/Ionic.png,
+    ../media/favrotation/Versa.png,
+]
 date: 2019-12-01T19:38:53.520Z
 category: apps
 description:

@@ -2,6 +2,12 @@
 title: Digital UI Design System
 path: /project/digital-ui-design-system
 featuredImage: ../media/digital-ui/Combined.png
+slides: [
+    ../media/digital-ui/Combined.png,
+    ../media/digital-ui/Desktop.png,
+    ../media/digital-ui/Tablet.png,
+    ../media/digital-ui/Mobile.png,
+]
 date: 2019-12-01T19:38:53.520Z
 category: web
 description:

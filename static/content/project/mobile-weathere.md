@@ -2,6 +2,12 @@
 title: Weathere
 path: /project/weathere
 featuredImage: ../media/weathere/Combined.png
+slides: [
+    ../media/weathere/Combined.png,
+    ../media/weathere/Map.png,
+    ../media/weathere/Settings.png,
+    ../media/weathere/Weather.png,
+]
 date: 2019-12-01T19:38:53.520Z
 category: mobile
 description:
