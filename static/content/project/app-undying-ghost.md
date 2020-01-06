@@ -6,6 +6,10 @@ slides: [
     ../media/undying-ghost/UDL.png,
     ../media/undying-ghost/UDL.png,
 ]
+tools: [
+    'nodejs',
+    'jenkins',
+]
 date: 2019-12-01T19:38:53.520Z
 category: apps
 description:

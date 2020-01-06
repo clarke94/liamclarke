@@ -8,6 +8,13 @@ slides: [
     ../media/digital-ui/Tablet.png,
     ../media/digital-ui/Mobile.png,
 ]
+tools: [
+    'html5',
+    'scss',
+    'javascript',
+    'grunt',
+    'jenkins'
+]
 date: 2019-12-01T19:38:53.520Z
 category: web
 description:

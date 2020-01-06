@@ -7,6 +7,12 @@ slides: [
     ../media/favrotation/Ionic.png,
     ../media/favrotation/Versa.png,
 ]
+tools: [
+    'nodejs',
+    'javascript',
+    'scss',
+    'html5',
+]
 date: 2019-12-01T19:38:53.520Z
 category: apps
 description:

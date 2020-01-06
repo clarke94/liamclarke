@@ -7,6 +7,7 @@ import { Layout } from '../components/layout/layout';
 import SEO from '../components/seo/seo';
 import { Carousel } from '../components/carousel/carousel';
 import style from './blog-template.module.scss';
+import { Tools } from '../components/tools/tools';
 
 export const Template = ({ data }) => {
     const { markdownRemark } = data;
@@ -16,6 +17,7 @@ export const Template = ({ data }) => {
         <Layout>
             <SEO title={frontmatter.title} />
             <Carousel slides={frontmatter.slides} />
+            <Tools tools={frontmatter.tools} />
             <Container classes={{ root: style.blogTemplate }}>
                 <Grid container>
                     <Grid item md={10} lg={8}>
@@ -36,6 +38,7 @@ export const pageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             path
             title
+            tools
             slides {
                 childImageSharp {
                     fluid(fit: COVER, maxHeight: 400) {
@@ -56,6 +59,7 @@ Template.propTypes = {
                 date: PropTypes.string,
                 path: PropTypes.string,
                 title: PropTypes.string,
+                tools: PropTypes.arrayOf(PropTypes.string),
                 slides: PropTypes.shape({
                     fluid: PropTypes.shape({
                         GatsbyImageSharpFluid_withWebp_tracedSVG: PropTypes.any,

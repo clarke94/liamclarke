@@ -8,6 +8,15 @@ slides: [
     ../media/legends-report/Tablet.png,
     ../media/legends-report/Mobile.png,
 ]
+tools: [
+    'html5',
+    'scss',
+    'javascript',
+    'gulp',
+    'jenkins',
+    'wordpress',
+    'php'
+]
 date: 2019-12-01T19:38:53.520Z
 category: web
 description:

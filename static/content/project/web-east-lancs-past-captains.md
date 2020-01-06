@@ -8,6 +8,15 @@ slides: [
     ../media/east-lancs-past-captains/Tablet.png,
     ../media/east-lancs-past-captains/Mobile.png,
 ]
+tools: [
+    'html5',
+    'scss',
+    'javascript',
+    'gulp',
+    'jenkins',
+    'wordpress',
+    'php'
+]
 date: 2019-12-01T19:38:53.520Z
 category: web
 description:

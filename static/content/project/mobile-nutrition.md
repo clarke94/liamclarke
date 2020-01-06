@@ -8,6 +8,14 @@ slides: [
     ../media/nutrition/Profile.png,
     ../media/nutrition/Shop.png,
 ]
+tools: [
+    'react',
+    'scss',
+    'javascript',
+    'nodejs',
+    'html5',
+    'jenkins'
+]
 date: 2019-12-01T19:38:53.520Z
 category: mobile
 description:
