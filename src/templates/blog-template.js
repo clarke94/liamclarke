@@ -8,6 +8,7 @@ import SEO from '../components/seo/seo';
 import { Carousel } from '../components/carousel/carousel';
 import style from './blog-template.module.scss';
 import { Tools } from '../components/tools/tools';
+import { Contact } from '../components/contact/contact';
 
 export const Template = ({ data }) => {
     const { markdownRemark } = data;
@@ -17,7 +18,6 @@ export const Template = ({ data }) => {
         <Layout>
             <SEO title={frontmatter.title} />
             <Carousel slides={frontmatter.slides} />
-            <Tools tools={frontmatter.tools} />
             <Container classes={{ root: style.blogTemplate }}>
                 <Grid container>
                     <Grid item md={10} lg={8}>
@@ -26,6 +26,8 @@ export const Template = ({ data }) => {
                     </Grid>
                 </Grid>
             </Container>
+            <Tools tools={frontmatter.tools} />
+            <Contact />
         </Layout>
     );
 };
