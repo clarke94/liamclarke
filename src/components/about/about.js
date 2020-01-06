@@ -7,10 +7,10 @@ export const About = () => (
     <Section title="Experience">
         <Grid container>
             <Grid item md={10} lg={8}>
-                <Progress title="Front-end Development" value={90} subskills={['HTML', 'CSS/SCSS/Less', 'JavaScript/Typescript', 'Angular', 'React', 'WordPress']} />
-                <Progress title="Back-end Development" value={65} subskills={['NodeJS', 'Java', 'PHP', 'Go']} />
-                <Progress title="Application Development" value={70} subskills={['NodeJS', 'Electron']} />
-                <Progress title="Mobile Development" value={65} subskills={['Ionic', 'React native', 'Nativescript']} />
+                <Progress title="Front-end" value={90} subskills={['HTML', 'CSS/SCSS/Less', 'JavaScript/Typescript', 'Angular', 'React', 'WordPress']} />
+                <Progress title="Back-end" value={65} subskills={['NodeJS', 'Java', 'PHP', 'Go']} />
+                <Progress title="Desktop Apps" value={70} subskills={['NodeJS', 'Electron']} />
+                <Progress title="Mobile" value={65} subskills={['Ionic', 'React native', 'Nativescript']} />
                 <Progress title="Database" value={60} subskills={['MySQL', 'MongoDB']} />
                 <Progress title="Build Tools" value={85} subskills={['Webpack', 'Grunt', 'Gulp']} />
                 <Progress title="CI/CD" value={50} subskills={['Jenkins', 'Travis', 'Circle']} />
