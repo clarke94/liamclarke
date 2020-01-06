@@ -18,16 +18,8 @@ category: apps
 description:
 ---
 
-A clockface that will display all images that are selected as favourites. Every time the watch screen is activated a new favourite image is displayed, optimized and sized to fit each smart watch screen.
+A clock face that will display any selected favourite photos from the users device and shuffle them on the watch screen.
 
-## Results
+Every time the users screen is activated a new favourite image is displayed at random, allowing a user to create their own backgrounds to their watches.
 
-## Problem
-
-### Major Challenge
-
-## Solution
-
-## Process
-
-## Conclusion
+This is a feature which is available out of the box for Apple smart watches but is not available for Fitbit watches, this clock face makes that same functionality available.
