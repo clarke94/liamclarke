@@ -16,8 +16,7 @@ export const Template = ({ data }) => {
                 <Grid container>
                     <Grid item md={10} lg={8}>
                         <h1>{frontmatter.title}</h1>
-                        <h2>{frontmatter.date}</h2>
-                        <div className="blog-post-content" dangerouslySetInnerHTML={{ __html: html }} />
+                        <div dangerouslySetInnerHTML={{ __html: html }} />
                     </Grid>
                 </Grid>
             </Container>
