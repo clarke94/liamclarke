@@ -1,3 +1,31 @@
+@keyframes pointLeft {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(-6px);
+    }
+
+    0% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes pointRight {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(6px);
+    }
+
+    0% {
+        transform: translateX(0);
+    }
+}
+
 .carousel {
     &__container {
         position: relative;
@@ -18,5 +46,64 @@
         background-repeat: no-repeat;
         background-position: 50%;
         background-size: contain;
+    }
+
+    &__arrow {
+        display: block;
+        color: #004569;
+        background: #ffffff;
+        border-radius: 50%;
+        padding: 2px;
+        transition: color 0.4s ease-in-out;
+    }
+
+    &__button {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 25vw;
+        border: 0;
+        background: transparent;
+        z-index: 1;
+
+        &_left {
+            left: 0;
+
+            > .carousel__arrow {
+                margin-right: auto;
+            }
+        }
+
+        &_right {
+            right: 0;
+
+            > .carousel__arrow {
+                margin-left: auto;
+            }
+        }
+
+        &:focus {
+            outline: 0;
+        }
+
+        &:hover {
+            > .carousel__arrow {
+                color: #0077b5;
+            }
+
+            &.carousel__button_left {
+                > .carousel__arrow {
+                    animation-name: pointLeft;
+                    animation-duration: 0.3s;
+                }
+            }
+
+            &.carousel__button_right {
+                > .carousel__arrow {
+                    animation-name: pointRight;
+                    animation-duration: 0.3s;
+                }
+            }
+        }
     }
 }
