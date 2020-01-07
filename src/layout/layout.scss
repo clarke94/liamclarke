@@ -20,3 +20,17 @@ h5,
 h6 {
     color: colour(primary, shade);
 }
+
+a,
+button,
+*[tabindex="-1"] {
+    display: inherit;
+
+    &:focus {
+        outline: 0;
+    }
+
+    @include focus() {
+        outline: 3px solid colour(tertiary) !important;
+    }
+}

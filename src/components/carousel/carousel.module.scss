@@ -33,10 +33,6 @@
         position: relative;
         height: 400px;
         overflow: hidden;
-
-        &:focus {
-            outline: 0;
-        }
     }
 
     &__image {
@@ -82,10 +78,6 @@
             > .carousel__arrow {
                 margin-left: auto;
             }
-        }
-
-        &:focus {
-            outline: 0;
         }
 
         &:hover {

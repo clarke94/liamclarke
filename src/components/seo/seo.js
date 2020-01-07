@@ -5,14 +5,14 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
 
-function SEO({
+export const SEO = ({
     description, lang, meta, title,
-}) {
+}) => {
     const { site } = useStaticQuery(
         graphql`
       query {
@@ -26,6 +26,21 @@ function SEO({
       }
     `,
     );
+
+    const [focus, setFocus] = useState(1);
+
+    useEffect(() => {
+        document.addEventListener('keydown', keydown);
+        document.addEventListener('click', mouseClick);
+    }, []);
+
+    const mouseClick = (event) => {
+        if (event.detail) setFocus(true);
+    };
+
+    const keydown = () => {
+        setFocus(false);
+    };
 
     const metaDescription = description || site.siteMetadata.description;
 
@@ -72,9 +87,10 @@ function SEO({
             ].concat(meta)}
         >
             <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+            <body className={focus ? 'disableFocus' : null} />
         </Helmet>
     );
-}
+};
 
 SEO.defaultProps = {
     lang: 'en',

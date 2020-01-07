@@ -18,11 +18,11 @@ export const Infobox = ({ post }) => (
             />
         </Link>
         <CardContent>
-            <Link to={post.frontmatter.path}>
-                <Typography gutterBottom variant="h5" component="h2">
+            <Typography gutterBottom variant="h5" component="h2">
+                <Link to={post.frontmatter.path}>
                     {post.frontmatter.title}
-                </Typography>
-            </Link>
+                </Link>
+            </Typography>
             <Typography variant="body2" color="textSecondary" component="p">
                 {post.excerpt}
             </Typography>
