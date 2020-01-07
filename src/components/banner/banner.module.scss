@@ -1,5 +1,6 @@
+@import "../../assets/scss/main.scss";
+
 .banner {
-    
     &_heading {
         position: relative;
     }
@@ -12,7 +13,7 @@
     }
 
     &_sector {
-        color: #0077b5;
+        color: colour(primary);
         position: absolute;
         width: 180px;
         right: 28%;
@@ -30,7 +31,6 @@
 
 @media (min-width: 576px) {
     .banner {
-        
         &_headingContainer {
             width: 180px;
         }

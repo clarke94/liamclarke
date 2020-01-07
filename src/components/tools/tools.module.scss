@@ -1,6 +1,8 @@
+@import "../../assets/scss/main.scss";
+
 .tools {
     &__heading {
-        color: darken(#0077b5, 15%);
+        color: colour(primary, shade);
     }
 
     &__container {

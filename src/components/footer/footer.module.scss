@@ -1,3 +1,5 @@
+@import "../../assets/scss/main.scss";
+
 .footer {
     width: 100%;
     display: block;
@@ -12,14 +14,14 @@
     &_link {
         padding: 5px;
         margin: 5px 10px;
-        color: #0077b5;
+        color: colour(primary);
         opacity: 0.75;
         filter: saturate(0);
-        transition: filter ease-in .300s, opacity ease-in .300s;
-        
+        transition: filter ease-in 0.3s, opacity ease-in 0.3s;
+
         &:hover,
         &:focus {
-            color: #0077b5;
+            color: colour(primary);
             filter: saturate(1);
             opacity: 1;
         }

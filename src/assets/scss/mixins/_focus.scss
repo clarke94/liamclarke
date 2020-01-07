@@ -1,0 +1,5 @@
+@mixin focus() {
+    body:not(.disableFocus) &:focus {
+        @content;
+    }
+}

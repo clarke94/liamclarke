@@ -1,3 +1,5 @@
+@import "../../assets/scss/main.scss";
+
 @keyframes pointLeft {
     0% {
         transform: translateX(0);
@@ -50,8 +52,8 @@
 
     &__arrow {
         display: block;
-        color: #004569;
-        background: #ffffff;
+        color: colour(secondary);
+        background: colour(light, light);
         border-radius: 50%;
         padding: 2px;
         transition: color 0.4s ease-in-out;
@@ -88,7 +90,7 @@
 
         &:hover {
             > .carousel__arrow {
-                color: #0077b5;
+                color: colour(primary);
             }
 
             &.carousel__button_left {

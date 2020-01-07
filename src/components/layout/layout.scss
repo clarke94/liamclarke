@@ -1,10 +1,11 @@
-$link-color: #0077b5;
+@import "../../assets/scss/main.scss";
+$link-color: colour(primary);
 
 @import "../../../node_modules/bootstrap/scss/bootstrap-reboot.scss";
 
 $theme-colors: (
-    $primary: #0077b5,
-    $info: #0077b5
+    $primary: colour(primary),
+    $info: colour(primary, light)
 );
 
 body {
@@ -17,5 +18,5 @@ h3,
 h4,
 h5,
 h6 {
-    color: darken(#0077b5, 15%);
+    color: colour(primary, shade);
 }

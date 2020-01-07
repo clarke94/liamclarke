@@ -1,14 +1,15 @@
-.contact {
+@import "../../assets/scss/main.scss";
 
+.contact {
     &__group {
         padding-bottom: 1rem;
     }
 
     &__success {
-        background-color: #4caf50 !important;
+        background-color: colour(success) !important;
     }
 
     &__error {
-        background-color: #f44336 !important;
+        background-color: colour(error) !important;
     }
 }
