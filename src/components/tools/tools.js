@@ -62,7 +62,7 @@ const ToolsBlock = (props) => {
 };
 
 ToolsBlock.propTypes = {
-    variant: PropTypes.objectOf(PropTypes.any).isRequired,
+    variant: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
     icon: PropTypes.objectOf(PropTypes.any).isRequired,
 };

@@ -62,11 +62,13 @@ Template.propTypes = {
                 path: PropTypes.string,
                 title: PropTypes.string,
                 tools: PropTypes.arrayOf(PropTypes.string),
-                slides: PropTypes.shape({
-                    fluid: PropTypes.shape({
-                        GatsbyImageSharpFluid_withWebp_tracedSVG: PropTypes.any,
+                slides: PropTypes.arrayOf(
+                    PropTypes.shape({
+                        fluid: PropTypes.shape({
+                            GatsbyImageSharpFluid_withWebp_tracedSVG: PropTypes.any,
+                        }),
                     }),
-                }),
+                ),
             }),
         }),
     }).isRequired,
