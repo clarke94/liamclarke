@@ -3,7 +3,7 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import PropTypes from 'prop-types';
 import { Container, Grid } from '@material-ui/core';
-import { Layout } from '../components/layout/layout';
+import { Layout } from '../layout/layout';
 import SEO from '../components/seo/seo';
 import { Carousel } from '../components/carousel/carousel';
 import style from './blog-template.module.scss';
