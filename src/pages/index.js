@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
 
 import { Layout } from '../layout/layout';
-import SEO from '../components/seo/seo';
+import { SEO } from '../components/seo/seo';
 import { Banner } from '../components/banner/banner';
 import { Projects } from '../components/projects/projects';
 import { About } from '../components/about/about';
