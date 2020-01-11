@@ -1,12 +1,12 @@
 ---
 title: East Lancs Past Captains
 path: /project/east-lancs-past-captains
-featuredImage: ../media/east-lancs-past-captains/Combined.png
+featuredImage: ../images/east-lancs-past-captains-combined.png
 slides: [
-    ../media/east-lancs-past-captains/Combined.png,
-    ../media/east-lancs-past-captains/Desktop.png,
-    ../media/east-lancs-past-captains/Tablet.png,
-    ../media/east-lancs-past-captains/Mobile.png,
+    ../images/east-lancs-past-captains-combined.png,
+    ../images/east-lancs-past-captains-desktop.png,
+    ../images/east-lancs-past-captains-tablet.png,
+    ../images/east-lancs-past-captains-mobile.png,
 ]
 tools: [
     'html5',

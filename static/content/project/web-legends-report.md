@@ -1,12 +1,12 @@
 ---
 title: Legends Report
 path: /project/legends-report
-featuredImage: ../media/legends-report/Combined.png
+featuredImage: ../images/legends-report-combined.png
 slides: [
-    ../media/legends-report/Combined.png,
-    ../media/legends-report/Desktop.png,
-    ../media/legends-report/Tablet.png,
-    ../media/legends-report/Mobile.png,
+    ../images/legends-report-combined.png,
+    ../images/legends-report-desktop.png,
+    ../images/legends-report-tablet.png,
+    ../images/legends-report-mobile.png,
 ]
 tools: [
     'html5',

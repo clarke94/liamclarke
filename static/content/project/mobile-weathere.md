@@ -1,12 +1,12 @@
 ---
 title: Weathere
 path: /project/weathere
-featuredImage: ../media/weathere/Combined.png
+featuredImage: ../images/weathere-combined.png
 slides: [
-    ../media/weathere/Combined.png,
-    ../media/weathere/Map.png,
-    ../media/weathere/Settings.png,
-    ../media/weathere/Weather.png,
+    ../images/weathere-combined.png,
+    ../images/weathere-map.png,
+    ../images/weathere-settings.png,
+    ../images/weathere-weather.png,
 ]
 tools: [
     'react',

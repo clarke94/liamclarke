@@ -1,12 +1,12 @@
 ---
 title: Digital UI Design System
 path: /project/digital-ui-design-system
-featuredImage: ../media/digital-ui/Combined.png
+featuredImage: ../images/digital-ui-combined.png
 slides: [
-    ../media/digital-ui/Combined.png,
-    ../media/digital-ui/Desktop.png,
-    ../media/digital-ui/Tablet.png,
-    ../media/digital-ui/Mobile.png,
+    ../images/digital-ui-combined.png,
+    ../images/digital-ui-desktop.png,
+    ../images/digital-ui-tablet.png,
+    ../images/digital-ui-mobile.png,
 ]
 tools: [
     'html5',

@@ -1,12 +1,12 @@
 ---
 title: Nutrition
 path: /project/nutrition
-featuredImage: ../media/nutrition/Combined.png
+featuredImage: ../images/nutrition-combined.png
 slides: [
-    ../media/nutrition/Combined.png,
-    ../media/nutrition/Login.png,
-    ../media/nutrition/Profile.png,
-    ../media/nutrition/Shop.png,
+    ../images/nutrition-combined.png,
+    ../images/nutrition-login.png,
+    ../images/nutrition-profile.png,
+    ../images/nutrition-shop.png,
 ]
 tools: [
     'angular',

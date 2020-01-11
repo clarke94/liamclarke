@@ -1,12 +1,12 @@
 ---
 title: Makaton
 path: /project/makaton
-featuredImage: ../media/makaton/Combined.png
+featuredImage: ../images/makaton-combined.png
 slides: [
-    ../media/makaton/Combined.png,
-    ../media/makaton/Learn.png,
-    ../media/makaton/Profile.png,
-    ../media/makaton/Translate.png,
+    ../images/makaton-combined.png,
+    ../images/makaton-learn.png,
+    ../images/makaton-profile.png,
+    ../images/makaton-translate.png,
 ]
 tools: [
     'react',

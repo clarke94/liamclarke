@@ -1,11 +1,11 @@
 ---
 title: Fitbit APOD
 path: /project/fitbit-apod
-featuredImage: ../media/fitbit-apod/Combined.png
+featuredImage: ../images/fitbit-apod-combined.png
 slides: [
-    ../media/fitbit-apod/Combined.png,
-    ../media/fitbit-apod/Ionic.png,
-    ../media/fitbit-apod/Versa.png,
+    ../images/fitbit-apod-combined.png,
+    ../images/fitbit-apod-ionic.png,
+    ../images/fitbit-apod-versa.png,
 ]
 tools: [
     'nodejs',

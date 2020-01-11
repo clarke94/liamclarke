@@ -1,9 +1,9 @@
 ---
 title: Undying Ghost
 path: /project/undying-ghost
-featuredImage: ../media/undying-ghost/UDL.png
+featuredImage: ../images/undying-ghost-logo.png
 slides: [
-    ../media/undying-ghost/UDL.png,
+    ../images/undying-ghost-logo.png,
 ]
 tools: [
     'nodejs',

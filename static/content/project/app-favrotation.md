@@ -1,11 +1,11 @@
 ---
 title: Favrotation
 path: /project/favrotation
-featuredImage: ../media/favrotation/Combined.png
+featuredImage: ../images/favrotation-combined.png
 slides: [
-    ../media/favrotation/Combined.png,
-    ../media/favrotation/Ionic.png,
-    ../media/favrotation/Versa.png,
+    ../images/favrotation-combined.png,
+    ../images/favrotation-ionic.png,
+    ../images/favrotation-versa.png,
 ]
 tools: [
     'nodejs',
