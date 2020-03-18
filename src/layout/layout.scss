@@ -24,7 +24,7 @@ h6 {
 a,
 button,
 *[tabindex="-1"] {
-    display: inherit;
+    display: inline;
 
     &:focus {
         outline: 0;
