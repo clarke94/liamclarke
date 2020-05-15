@@ -15,7 +15,7 @@ export const Banner = () => (
                     autoplay
                     delay={(el, index) => index * 3000}
                     opacity={[0, 1, 1, 1, 0]}
-                    translateY={['-50px', '0px', '0px', '0px', '10px']}
+                    translateY={['-50px', '-5px', '-5px', '-5px', '10px']}
                 >
                     <span className={style.banner_sector}>Digital </span>
                     <span className={style.banner_sector}>Web </span>

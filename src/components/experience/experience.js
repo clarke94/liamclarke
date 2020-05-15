@@ -3,7 +3,7 @@ import { Grid } from '@material-ui/core';
 import { Progress } from '../progress/progress';
 import { Section } from '../section/section';
 
-export const About = () => (
+export const Experience = () => (
     <Section title="Experience">
         <Grid container>
             <Grid item md={10} lg={8}>
@@ -20,4 +20,4 @@ export const About = () => (
     </Section>
 );
 
-export default About;
+export default Experience;

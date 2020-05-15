@@ -3,7 +3,7 @@ import { Container, Typography, Box } from '@material-ui/core';
 import { Link } from 'gatsby';
 
 import { Layout } from '../layout/layout';
-import SEO from '../components/seo/seo';
+import { SEO } from '../components/seo/seo';
 
 const NotFoundPage = () => (
     <Layout>
