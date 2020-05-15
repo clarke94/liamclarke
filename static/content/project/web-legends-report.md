@@ -32,4 +32,4 @@ During this task, it became apparent there were many security vulnerabilities wi
 
 This significantly increased the site performance from around 7 seconds uncached load, to 1.4 seconds uncached load.
 
-As a final report, information was provided on how to further optimise the website should the organisation chose to do so in the future which was outside the scope of the project.
+As a final report, information was provided on how to further optimise the website should the organisation chose to do so in the future, detailing the importance of caching.
