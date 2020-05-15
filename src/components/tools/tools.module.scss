@@ -6,7 +6,7 @@
     }
 
     &__container {
-        display: flex;
+        display: flex !important;
         flex-wrap: wrap;
         justify-content: center;
     }
