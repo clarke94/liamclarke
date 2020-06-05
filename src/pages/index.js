@@ -5,6 +5,7 @@ import { graphql } from 'gatsby';
 import { Layout } from '../layout/layout';
 import { SEO } from '../components/seo/seo';
 import { Banner } from '../components/banner/banner';
+import { About } from '../components/about/about';
 import { Projects } from '../components/projects/projects';
 import { Contact } from '../components/contact/contact';
 import { Experience } from '../components/experience/experience';
@@ -22,6 +23,7 @@ const IndexPage = ({
         <Layout>
             <SEO title="Home" />
             <Banner />
+            <About />
             <Experience />
             <Projects web={Web} apps={Apps} mobile={Mobile} />
             <Contact />
