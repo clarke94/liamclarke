@@ -19,8 +19,8 @@ export const About = () => (
                 <Typography variant="body1" align="center" gutterBottom>
                     In my spare time I am a Moderator for the Treehouse online
                     learning platform, moderating the community forums ensuring
-                    all questions are answered. As well as that I do Software
-                    freelance work and Software volunteer work for non-profit
+                    all questions are answered. As well as that I do software
+                    freelance work and software volunteer work for non-profit
                     businesses.
                 </Typography>
             </Grid>
